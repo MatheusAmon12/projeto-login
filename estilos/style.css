@@ -1,2 +1,26 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    position: relative;
+}
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    width: 90vw;
+    height: 90vw;
+    border-radius: 10px;
+}
+
+div#imagem{
+    background: url('../imagens/fundo-login.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
