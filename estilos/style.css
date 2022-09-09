@@ -3,22 +3,21 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    position: relative;
-}
 section{
-    display: block;
     margin: auto;
-    background-color: red;
-    width: 60vw;
-    height: 70vw;
-    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    border-radius:30px;
+    background-color: white;
+    color: black;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-div#imagem{
-    background: url('../imagens/fundo-login.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}

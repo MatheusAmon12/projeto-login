@@ -7,24 +7,108 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #005B92;
+        }
+        #imagem{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            height: 170px;
+            background: url('imagens/fundo-login-2.jpg') center center;
+            background-size: cover;
+        }
+        
+        div > h1{
+            padding: 20px 0px 0px 20px;
+            font-size: 35px;
+            color: #08159E;
+        }
+
+        div > p{
+            text-align: justify;
+            text-indent: 20px;
+            font-size: 15px;
+            padding: 10px 20px 0px 20px;   
+        }
+
+        div > p > a{
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+        }
+
+        .link{
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        form{
+            margin-top: 50px;
+        }
+        .etiqueta{
+            display: block;
+            margin-top: 25px;
+            margin-bottom: -15px;
+            padding-left: 55px;
+            font-size: 0.8em;
+        }
+
+        div input{
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+            width: 300px;
+            height: 40px;
+            border-radius: 30px;
+            border: 0px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+            text-indent: 10px;
+            font-size: 1em;
+        }
+
+        #botao{
+            margin-top: 10px;
+            width: 200px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+            background-color: #005B92;
+            color: white;
+        }
+        #botao:hover{
+            background-color: #0895A8;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
     <main>
         <section id="login"> 
             <div id="imagem">
-                Imagem
+
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
                     <div>
-                        <input type="text" placeholder="USERNAME">
+                        <label for="iemail" class="etiqueta">Email</label>
+                        <input type="text" placeholder="user@example.com" id="iemail" required >
                     <div>
                     <div>
-                        <input type="text" placeholder="SENHA">
+                        <label for="isenha" class="etiqueta">Senha</label>
+                        <input type="text" placeholder="Min 8 caracteres" id="isenha" required minlength="8" maxlength="12">
+                    </div>
+                    <div>
+                        <input type="button" value="Entrar" id="botao">
                     </div>
                 </form>
+                <p class="link">
+                    <a href="#" >Cadastrar</a> | <a href="#"">Esqueci minha senha</a>
+                </p>
             </div>
         </section>
     </main>
