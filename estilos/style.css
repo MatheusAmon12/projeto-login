@@ -9,13 +9,11 @@ main{
     position: relative;
 }
 section{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    margin: auto;
     background-color: red;
-    width: 90vw;
-    height: 90vw;
+    width: 60vw;
+    height: 70vw;
     border-radius: 10px;
 }
 
