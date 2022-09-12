@@ -9,3 +9,38 @@ desktop: de 993 até 1200px
 grandes telas: acima de 1200px
 
 */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body{
+        background: url('../imagens/fundo-login-3.jpg') no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+        background-position: right center;
+    }
+    section{
+        margin: 0px;
+
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body{
+        background: url('../imagens/fundo-login-3.jpg') no-repeat;
+        background-size: cover;
+    }
+    section{
+        margin: 0px;
+
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background: url('../imagens/fundo-login-3.jpg') no-repeat;
+        
+    }
+    section{
+        margin: 0px;
+
+    }
+}
