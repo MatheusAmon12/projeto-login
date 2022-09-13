@@ -12,10 +12,11 @@ grandes telas: acima de 1200px
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
     body{
-        background: url('../imagens/fundo-login-3.jpg') no-repeat;
-        background-size: contain;
-        background-attachment: fixed;
-        background-position: right center;
+        background-image: linear-gradient(-45deg, #003252 15%, #0089DE, #005B92, #00619E, #004A78);
+        background-repeat: no-repeat;
+        background-size: 200vh 200vw;
+
+        animation: gradiente 5s ease alternate infinite;
     }
     section{
         margin: 0px;
@@ -25,8 +26,11 @@ grandes telas: acima de 1200px
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     body{
-        background: url('../imagens/fundo-login-3.jpg') no-repeat;
-        background-size: cover;
+        background-image: linear-gradient(-45deg, #003252 15%, #0089DE, #005B92, #00619E, #004A78);
+        background-repeat: no-repeat;
+        background-size: 206vh 206vw;
+
+        animation: gradiente 10s ease alternate infinite;
     }
     section{
         margin: 0px;
@@ -36,11 +40,24 @@ grandes telas: acima de 1200px
 
 @media screen and (min-width: 1200px){
     body{
-        background: url('../imagens/fundo-login-3.jpg') no-repeat;
+        background-image: linear-gradient(-45deg, #071491, #91340F, #005B92, #91750F);
+        background-repeat: no-repeat;
+        background-size: 206vh 206vw;
+
+        animation: gradiente 5s ease alternate infinite;
         
     }
     section{
         margin: 0px;
 
+    }
+}
+
+@keyframes gradiente{
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+        background-position: 100% 50%;
     }
 }
