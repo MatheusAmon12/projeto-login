@@ -7,9 +7,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-image: linear-gradient(-45deg, #089E87 15%, #0895A8, #005B92, #0841A8, #08159E);
+    background-image: linear-gradient(-45deg, #FF36AB, #0841A8, #00B4D8, #92DCE5);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 200vw 200vh;
+
+    animation: gradiente 5s ease alternate infinite;
 }
 section{
     margin: auto;
@@ -98,4 +100,13 @@ div input{
     background-color: #0895A8;
     font-weight: bold;
     text-decoration: underline;
+}
+
+@keyframes gradiente{
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+        background-position: 100% 50%;
+    }
 }
