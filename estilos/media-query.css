@@ -10,14 +10,52 @@ grandes telas: acima de 1200px
 
 */
 @media screen and (min-width: 769px) and (max-width: 992px) {
-   
+    body{
+        background-image: linear-gradient(-20deg, #31393C, #2176FF);
+        background-repeat: no-repeat;
+
+        animation: gradiente 2s ease alternate infinite;
+    }
+
+    section#login{
+        width: 90vw;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+
+    section#login > div#imagem{
+        float: left;   
+        width: 30%;
+        height: 100%;
+    }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
- 
-    
+@media screen and (min-width: 993px){
+    section#login{
+        width: 920px;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 50%;
+    }
+
+    section#login > div#imagem{
+        float: left;   
+        width: 50%;
+        height: 100%;
+    }
 }
 
-@media screen and (min-width: 1200px){
-  
+@keyframes gradiente {
+    from{
+        background-position: 0% 50%;
+    }
+
+    to{
+        background-position: 100% 50%;
+    }
 }
