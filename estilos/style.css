@@ -1,112 +1,53 @@
 @charset "UTF-8";
 
+/*#31393C
+#2176FF
+#33A1FD*/
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background-image: linear-gradient(-45deg, #FF36AB, #0841A8, #00B4D8, #92DCE5);
-    background-repeat: no-repeat;
-    background-size: 200vw 200vh;
 
-    animation: gradiente 5s ease alternate infinite;
+body, html{
+    background-color: #31393C;
+    height: 100vh;
+    width: 100vw;
 }
-section{
-    margin: auto;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    border-radius:30px;
-    background-color: white;
-    color: black;
-    width: 400px;
-    height: 600px;
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+
+
+    background-color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-#imagem{
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 170px;
-    background: url('../imagens/fundo-login-2.jpg') center center;
+
+section#login > div#imagem{
+    display: block;
+    background: url("../imagens/fundo-login.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 200px;
 }
 
-div > h1{
-    padding: 20px 0px 0px 20px;
-    font-size: 35px;
-    color: #08159E;
-}
-
-div > p{
-    text-align: justify;
-    text-indent: 20px;
-    font-size: 15px;
-    padding: 10px 20px 0px 20px;   
-}
-
-div > p > a{
-    text-decoration: none;
-    color: #0841A8;
-    font-size: 13px;
-}
-
-div > p > a:hover{
-    text-decoration: underline;
-}
-
-.link{
-    margin-top: 15px;
-    text-align: left;
-    color: black;
-}
-
-form{
-    margin-top: 50px;
-}
-.etiqueta{
+section#login > div#formulario{
     display: block;
-    margin-top: 25px;
-    margin-bottom: -13px;
-    padding-left: 55px;
-    font-size: 0.8em;
-}
-
-div input{
-    display: block;
-    margin: auto;
-    margin-top: 15px;
-    width: 300px;
-    height: 40px;
-    border-radius: 30px;
-    border: 0px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-    text-indent: 10px;
-    font-size: 1em;
-}
-
-#botao{
-    margin-top: 10px;
-    width: 200px;
-    font-size: 1.1em;
-    cursor: pointer;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    background-color: #005B92;
-    color: white;
-}
-#botao:hover{
-    background-color: #0895A8;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-@keyframes gradiente{
-    from{
-        background-position: 0% 50%;
-    }
-    to{
-        background-position: 100% 50%;
-    }
+    padding: 10px;
 }
