@@ -4,6 +4,8 @@
 #2176FF
 #33A1FD*/
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,7 +14,7 @@
 }
 
 body, html{
-    background-color: #31393C;
+    background-color: #413C40;
     height: 100vh;
     width: 100vw;
 }
@@ -22,6 +24,37 @@ main{
     height: 100vh;
     width: 100vw;
 }
+
+#formulario > h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #593752;
+}
+#formulario > p{
+    font: 400 0.9em 'Roboto', sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    color: #413C40;
+}
+
+.etiqueta{
+    display: block;
+    font-weight: bold;
+    color: #593752;
+}
+
+#isenha, #iemail{
+    border: none;
+    border-bottom: 1px solid #8C5782;
+    margin-bottom: 15px;
+}
+
+#isenha::placeholder, #iemail::placeholder{
+    color: #D9C7D5;
+}
+
 
 section#login{
     position: absolute;
@@ -42,11 +75,9 @@ section#login{
 }
 
 section#login > div#imagem{
-    background: url("../imagens/fundo-login.jpg");
+    background: url("../imagens/fundo.jpg") no-repeat fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    height: 200px;
+    height: 180px;
     display: block;
 }
 
