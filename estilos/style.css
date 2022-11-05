@@ -77,6 +77,12 @@ main{
     background-color: #593752;
     color: white;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+#botao:hover{
+    font-weight: bold;
+    background-color: #8C5782;
 }
 
 .link{
@@ -87,6 +93,7 @@ main{
 }
 .link a{
     font-size: 0.75em;
+    text-decoration: none;
 }
 
 section#login{
