@@ -19,16 +19,16 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
-                    <div>
+                    <div id="input_1">
                         <label for="iemail" class="etiqueta">Email</label>
                         <input type="text" placeholder="user@example.com" id="iemail" required >
                     <div>
-                    <div>
+                    <div id="input_2">
                         <label for="isenha" class="etiqueta">Senha</label>
                         <input type="text" placeholder="Min 8 caracteres" id="isenha" required minlength="8" maxlength="12">
                     </div>
-                    <div>
-                        <input type="button" value="Entrar" id="botao" mouseenter="animacao_botao()">
+                    <div id="btn">
+                        <input type="button" value="Entrar" id="botao">
                     </div>
                 </form>
                 <p class="link">

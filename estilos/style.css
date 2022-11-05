@@ -45,16 +45,48 @@ main{
     color: #593752;
 }
 
+#input_1, #input_2{
+    height: 50px;
+    width: 42vw;
+    margin: auto;
+    margin-bottom: 10px;
+}
 #isenha, #iemail{
-    border: none;
-    border-bottom: 1px solid #8C5782;
-    margin-bottom: 15px;
+    padding-left: 10px;
+    border: 1px solid #8C5782;
+    border-radius: 15px;
+    height: 30px;
+    width: 42vw;
+    margin-bottom: 10px;
 }
 
 #isenha::placeholder, #iemail::placeholder{
     color: #D9C7D5;
 }
 
+#btn{
+    height: 30px;
+    width: 42vw;
+    margin: auto;
+}
+#botao{
+    width: 42vw;
+    height: 30px;
+    border: none;
+    background-color: #593752;
+    color: white;
+    border-radius: 15px;
+}
+
+.link{
+    display: block;
+    width: 190px;
+    margin: auto;
+    margin-top: 5px;
+}
+.link a{
+    font-size: 0.75em;
+}
 
 section#login{
     position: absolute;
@@ -66,8 +98,8 @@ section#login{
 
     background-color: white;
     border-radius: 20px;
-    width: 250px;
-    height: 500px;
+    width: 50vw;
+    height: 510px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
     transition: width 0.3s, height 0.3s;
