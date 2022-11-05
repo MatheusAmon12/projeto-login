@@ -24,6 +24,8 @@ grandes telas: acima de 1200px
     section#login > div#formulario{
         float: left;
         width: 70%;
+        position: relative;
+        top: 18%;
     }
 
     section#login > div#imagem{
@@ -32,6 +34,50 @@ grandes telas: acima de 1200px
         height: 100%;
         background: url("../imagens/fundo_pequeno.jpg") no-repeat;
         background-size: cover;
+    }
+
+    #formulario > h1, #formulario > p{
+        width: 40vw;
+        margin: auto;
+    }
+
+    #formulario > h1{
+        font-size: 2.1em;
+        margin-bottom: 10px;
+    }
+
+    #formulario > p{
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .etiqueta{
+        font-size: 1em;
+    }
+
+    #input_1, #input_2{
+        height: 60px;
+        width: 30vw;
+    }
+
+    #iemail, #isenha{
+        width: 30vw;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    #iemail::placeholder, #isenha::placeholder{
+        font-size: 1.1em;
+    }
+
+    #botao{
+        width: 30vw;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .link{
+        margin-top: 20px;
     }
 }
 
@@ -51,6 +97,57 @@ grandes telas: acima de 1200px
         height: 100%;
 
     }
+
+    #formulario{
+        position: relative;
+        top: 10%;
+    }
+
+    #formulario > h1, #formulario > p{
+        width: 35vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #formulario > h1{
+        font-size: 2.2em;
+    }
+
+    #formulario > p{
+        font-size: 1.1em;
+    }
+
+    .etiqueta{
+        font-size: 1.1em;
+    }
+
+    #input_1, #input_2{
+        width: 32vw;
+        max-width: 400px;
+    }
+
+    #iemail, #isenha, #botao{
+        width: 32vw;
+        max-width: 400px;
+        height: 40px;
+        border-radius: 25px;
+        margin-bottom: 25px;
+    }
+    
+    #btn{
+        width: 32vw;
+    }
+
+    #botao{
+        margin-top: 25px;
+    }
+
+    .link{
+        margin-top: 40px;
+        font-size: 1.1em;
+        width: 199px;
+    }
+
 }
 
 @keyframes gradiente {

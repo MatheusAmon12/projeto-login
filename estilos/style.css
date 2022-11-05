@@ -42,6 +42,7 @@ main{
 .etiqueta{
     display: block;
     font-weight: bold;
+    font-size: .8em;
     color: #593752;
 }
 
@@ -80,7 +81,7 @@ main{
 
 .link{
     display: block;
-    width: 190px;
+    width: 181px;
     margin: auto;
     margin-top: 5px;
 }
